@@ -1,0 +1,112 @@
+/*1024px*/
+@media screen
+and (max-width: 1024px) {
+    /* html,bodyタグの設定 */
+    html, body {
+        margin: 0; /* 余白の削除 */
+        padding: 0; /* 余白の削除 */
+        width: 100%;
+        height: 100%;
+    }
+
+	img{
+		max-width: 100%;
+	}
+
+    /* ヘッダーの固定 */
+    div#header-fixed {
+        position: fixed; /* ヘッダーの固定 */
+        top: 0px; /* 位置(上0px) */
+        left: 0px; /* 位置(右0px) */
+        width: 100%; /* 横幅100%　*/
+        height: 80px; /* 縦幅140px */
+    }
+
+
+    div#header {
+        text-align: center;
+        font-size: 0.6em;
+		background-color: gray;
+		padding: 2px 0px;
+        color: white;
+		font-weight: normal;
+    }
+
+    /* フッターの固定 */
+    div#footer-fixed {
+        position: fixed; /* フッターの固定 */
+        bottom: 0px; /* 位置(下0px) */
+        left: 0px; /* 位置(左0px) */
+        width: 100%; /* 横幅100%　*/
+        height: 80px; /* 縦幅140px */
+    }
+
+/*ここから追記*/
+	div#footer-fixed li{
+		width:25%;
+		float: left;
+		list-style-type: none;
+		list-style-position: outside;
+		box-sizing: border-box;
+		border: solid white 1px;
+	}
+	div#footer-fixed li a{
+		display: block;
+		width: 100%;
+		height: 80px;
+		background-color: gray;
+		line-height: 80px;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+	}
+	div#footer-fixed li a:hover{
+		background-color: yellow;
+	}
+
+    div#footer {
+        border: 5px solid #fff; /* 表示領域を白枠で囲う */
+        width: 960px; /* 横の幅970px */
+        margin: auto; /* 中央揃え */
+        text-align: center;
+        font-size: 100px;
+        color: white;
+    }
+
+    /* ボディの定義 */
+    div#body-bk {
+    }
+
+
+    /*Main画像の設定*/
+    #mainimg {
+        width: 100%;
+		margin-top: 50px;
+    }
+    #menu {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    #menu p {
+        background-color: green;
+    }
+    #facebook {
+        float: left;
+    }
+}
+
+/*768px*/
+@media screen
+and (max-width: 768px) {
+}
+
+/*480px*/
+@media screen
+and (max-width: 480px) {
+}
+
+/*320px*/
+@media screen
+and (max-width: 320px) {
+}
